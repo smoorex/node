@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smoorex/node.git"
+  },
+  "author": "SeanMoore",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smoorex/node/issues"
+  },
+  "homepage": "https://github.com/smoorex/node#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
