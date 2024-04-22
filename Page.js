@@ -10,13 +10,19 @@ class Page {
     }
 
     render() {
-        let pageContent = `<h1>${this.title}</h1>`;
-        pageContent += `<p>${this.content}</p>`;
+        let pageContent = `<div class="container">`;
+        pageContent += `<h1 class="display-4">${this.title}</h1>`;
+        pageContent += `<p class="lead">${this.content}</p>`;
         this.articles.forEach(article => {
-            pageContent += `<h2>${article.title}</h2>`;
-            pageContent += `<p>${article.content}</p>`;
-            pageContent += `<p>Published on: ${article.publishDate}</p>`;
+            pageContent += `<div class="card">`;
+            pageContent += `<div class="card-body">`;
+            pageContent += `<h2 class="card-title">${article.title}</h2>`;
+            pageContent += `<p class="card-text">${article.content}</p>`;
+            pageContent += `<p class="card-text"><small class="text-muted">${article.publishDate}</small></p>`;
+            pageContent += `</div>`;
+            pageContent += `</div>`;
         });
+        pageContent += `</div>`;
         return pageContent;
     }
 }
